@@ -24,3 +24,130 @@ a {
     background: black;
   }
 }
+body {
+  background-color: rgb(10, 10, 10);
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#gallery {
+  height: 140vmax;
+  width: 140vmax;
+  position: absolute;
+}
+
+.tijolo {
+  border-radius: 1vmax;
+  position: absolute;
+  transition: transform 800ms ease;
+}
+.tijolo:hover {
+  transform: scale(1.1);
+}
+
+.tijolo:hover > img {
+  opacity: 1;
+  transform: scale(1.01);
+}
+.tijolo > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+.tijolo:nth-child(1) {
+  background-color: violet;
+  height: 14%;
+  width: 30%;
+  left: 14%;
+  top: 55%;
+}
+
+.tijolo:nth-child(2) {
+  background-color: whitesmoke;
+  height: 24%;
+  width: 14%;
+  left: 42%;
+  top: 12%;
+}
+
+.tijolo:nth-child(3) {
+  background-color: red;
+  height: 18%;
+  width: 16%;
+  left: 12%;
+  top: 34%;
+}
+
+.tijolo:nth-child(4) {
+  background-color: rgb(27, 118, 31);
+  height: 22%;
+  width: 17%;
+  left: 45%;
+  top: 48%;
+}
+
+.tijolo:nth-child(5) {
+  background-color: rgba(111, 16, 128, 0.611);
+  height: 45%;
+  width: 32%;
+  left: 8%;
+  top: 70%;
+}
+
+.tijolo:nth-child(6) {
+  background-color: rgb(122, 54, 19);
+  height: 24%;
+  width: 24%;
+  left: 68%;
+  top: 8%;
+}
+
+.tijolo:nth-child(7) {
+  background-color: rgba(161, 29, 86, 0.12);
+  height: 29%;
+  width: 20%;
+  left: 50%;
+  top: 74%;
+}
+
+.tijolo:nth-child(8) {
+  background-color: rgb(106, 93, 88);
+  height: 24%;
+  width: 18%;
+  left: 72%;
+  top: 42%;
+}
+
+.tijolo:nth-child(9) {
+  background-color: rgb(81, 124, 195);
+  height: 10%;
+  width: 15%;
+  left: 84%;
+  top: 84%;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  color: antiquewhite;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-2 {
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  color: antiquewhite;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
